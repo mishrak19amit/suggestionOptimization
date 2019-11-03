@@ -1,0 +1,4 @@
+UserSpecificDataAnalysis.java
+
+"select user_id, product_id, sum(product_quantity) as numbeOfOrder, sum(total_payable_amount) as totalPaidMoney, created_at, updated_at from OrderItems group by user_id, product_id, created_at, updated_at order by totalPaidMoney desc
+
